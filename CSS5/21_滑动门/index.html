@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: #eee;
+        }
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        .slide {
+            width: 234px;
+            height: 420px;
+            background-color: rgb(115, 105, 105);
+            padding: 20px 0;
+            margin: 100px;
+            position:relative;
+        }
+
+        .slide ul {
+            list-style: none;
+        }
+
+        .slide ul li {
+            line-height: 42px;
+            width: 100%;
+            height: 42px;
+            text-align: left;
+            padding-left: 30px;
+            box-sizing: border-box;
+        }
+
+        .slide ul li a {
+            display: flex;
+            text-decoration: none;
+            color: aliceblue;
+        }
+
+        .slide ul li:hover {
+            background-color: darkorange;
+        }
+        .slide_list{
+            width: 992px;
+            height: 460px;
+            background-color: aliceblue;
+            position:absolute;
+            top:0px;
+            left:234px;
+            border: 1px solid rgb(255, 255, 255);
+            border-left:none;
+            box-shadow: 0px 8px 16px rgba(0,0,0,0.18);
+            display: none;
+        }
+        .slide_list ul{
+            list-style: none;
+        }
+        .slide_list ul li{
+            width:25%;
+            float: left;
+        }
+        .slide ul li:hover >.slide_list{
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 滑动门结构 -->
+    <div class="slide">
+        <ul>
+            <li>
+                <a href="#">手机</a>
+                <div class="slide_list">
+                    <ul>
+                        <li>型号0</li>
+                        <li>型号1</li>
+                        <li>型号2</li>
+                        <li>型号3</li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <a href="#">平板</a>
+                <div class="slide_list">
+                    <ul>
+                        <li>型号4</li>
+                        <li>型号5</li>
+                        <li>型号6</li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <a href="#">电脑</a>
+                <div class="slide_list">
+                    <ul>
+                        <li>型号7</li>
+                        <li>型号8</li>
+                        <li>型号9</li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+    </div>
+</body>
+
+</html>
